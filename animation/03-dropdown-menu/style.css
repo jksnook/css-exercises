@@ -17,8 +17,23 @@
   padding: 0;
   margin: 0;
   background-color: rgb(99, 97, 97);
-
+  animation: drop 1s;
   display: none;
+  transform-origin: top;
+}
+
+@keyframes drop {
+  from {
+    transform: scaleY(0%);
+  }
+
+  80% {
+    transform: scaleY(140%);
+  }
+
+  to {
+    transform: scaleY(100%);
+  }
 }
 
 ul.dropdown-menu li:hover {
